@@ -47,6 +47,8 @@ void sieveOfEratosthenes(int n) {
             cout << i << " ";
         }
     }
+
+    cout << endl;
 }
 
 int main() {
