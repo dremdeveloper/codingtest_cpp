@@ -34,6 +34,7 @@ void sieveOfEratosthenes(int n) {
     
     for (int i = 2; i*i <= n; i++) { 
         if (prime[i]) { // i가 소수인 경우
+            //i*i 미만의 수들은 이미 이전의 다른 소수들에 의해 체크됩니다. 따라서 i*i부터 시작합니다.
             for (int j = i*i; j <= n; j += i) { 
                 prime[j] = false; // i의 배수를 모두 false로 설정
             }
