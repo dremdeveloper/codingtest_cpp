@@ -1,7 +1,6 @@
 ## 05장 배열
 | 파일명 | 문제 |난이도| 비고 |
 |------|------|------|------|
-
 |[01.py](https://github.com/dremdeveloper/codingtest_cpp/tree/main/solution/01.py)|배열 뒤집기|⭐|저자 출제|
 |[02.py](https://github.com/dremdeveloper/codingtest_cpp/tree/main/solution/02.py)|배열 제어하기|⭐⭐|저자 출제|
 |[03.py](https://github.com/dremdeveloper/codingtest_cpp/tree/main/solution/03.py)|두 수를 뽑아서 더하기|⭐|저자 출제|
