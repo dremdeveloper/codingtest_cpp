@@ -27,17 +27,17 @@ int solution(vector<string> want, vector<int> number, vector<string> discount) {
   return answer;
 }
 
-//여기는 테스트 코드 입니다.
+//여기부터는 테스트 코드 입니다.
 #include <iostream>
 
 int main()
 {
-    cout << solution( {"banana", "apple", "rice", "pork", "pot"}, 
-                      {3, 2, 2, 2, 1}, 
-                      {"chicken", "apple", "apple", "banana", "rice","apple", "pork", "banana", "pork", "rice", "pot","banana", "apple", "banana"}) << endl; // 3
+  cout << solution( {"banana", "apple", "rice", "pork", "pot"}, 
+                    {3, 2, 2, 2, 1}, 
+                    {"chicken", "apple", "apple", "banana", "rice","apple", "pork", "banana", "pork", "rice", "pot","banana", "apple", "banana"}) << endl; // 3
                       
-    cout << solution( {"apple"}, 
-                      {10}, 
-                      {"banana", "banana", "banana", "banana","banana", "banana", "banana", "banana", "banana","banana"}) << endl; // 0
-    return 0;
+  cout << solution( {"apple"}, 
+                    {10}, 
+                    {"banana", "banana", "banana", "banana","banana", "banana", "banana", "banana", "banana","banana"}) << endl; // 0
+  return 0;
 }
