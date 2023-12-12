@@ -39,3 +39,5 @@
 |[18.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/18.cpp)|두 개의 수로 특정값 만들기|⭐|저자 출제|
 |[19.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/19.cpp)|문자열 해싱을 이용한 검색 함수 만들기|⭐⭐|저자 출제|
 |[20.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/20.cpp) [20-2.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/20-2.cpp)|완주하지 못한 선수|⭐| https://programmers.co.kr/learn/courses/30/lessons/42576|
+|[21.py](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/21.py)|할인 행사|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/131127|
+|[22.py](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/22.py)|오픈 채팅방|⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/42888|
