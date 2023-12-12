@@ -2,6 +2,7 @@
 #include <vector>
 #include <unordered_map>
 #include <sstream>
+
 using namespace std;
 
 vector<string> solution(vector<string> record) {
