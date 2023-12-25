@@ -41,3 +41,34 @@
 |[20.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/20.cpp) [20-2.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/20-2.cpp)|완주하지 못한 선수|⭐| https://programmers.co.kr/learn/courses/30/lessons/42576|
 |[21.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/21.cpp)|할인 행사|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/131127|
 |[22.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/22.cpp)|오픈 채팅방|⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/42888|
+|[23.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/23.cpp)|베스트 앨범|⭐⭐| https://programmers.co.kr/learn/courses/30/lessons/42579|
+|[24.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/24.cpp)|신고 결과 받기|⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/92334|
+|[25.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/25.cpp)|메뉴 리뉴얼|⭐⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/72411|
+
+
+## 09장 트리
+| 파일명 | 문제 |난이도| 비고 |
+|------|------|------|------|
+|[26.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/26.cpp)|트리 순회|⭐⭐|저자 출제|
+|[27.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/27.cpp)|이진 탐색 트리 구현|⭐⭐⭐|저자 출제|
+|[28.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/28.cpp)|예상 대진표|⭐|https://programmers.co.kr/learn/courses/30/lessons/12985|
+|[29.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/29.cpp)|다단계 칫솔 판매|⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/77486|
+|[30.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/30.cpp)|미로 탈출|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/159993|
+|[31.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/31.cpp)|양과 늑대|⭐⭐⭐⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/92343|
+|[32.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/32.cpp)|길 찾기 게임|⭐⭐⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/42892|
+
+
+## 10장 집합
+| 파일명 | 문제 |난이도| 비고 |
+|------|------|------|------|
+|[33.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/33.cpp)|간단한 유니온-파인드 알고리즘 구현하기|⭐⭐|저자 출제|
+|[34.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/34.cpp)|폰켓몬|⭐|https://programmers.co.kr/learn/courses/30/lessons/1845|
+|[35.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/35.cpp)|영어 끝말잇기|⭐|https://programmers.co.kr/learn/courses/30/lessons/12981|
+|[36.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/36.cpp)|전화번호 목록|⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/42577|
+|[37.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/37.cpp)|섬 연결하기|⭐⭐⭐| https://school.programmers.co.kr/learn/courses/30/lessons/42861|
+
+
+## 11장 그래프
+| 파일명 | 문제 |난이도| 비고 |
+|------|------|------|------|
+|[38.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/38.cpp)|깊이 우선 탐색으로 모든 노드를 순회하는 함수 작성하기|⭐|저자 출제|
