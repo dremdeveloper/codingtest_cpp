@@ -72,3 +72,22 @@
 | 파일명 | 문제 |난이도| 비고 |
 |------|------|------|------|
 |[38.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/38.cpp)|깊이 우선 탐색으로 모든 노드를 순회하는 함수 작성하기|⭐|저자 출제|
+|[39.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/39.cpp)|너비 우선 탐색으로 이용하여 모든 노드를 순회하는 함수 작성하기|⭐|저자 출제|
+|[40.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/40.cpp)|다익스트라 알고리즘 구현하기|⭐⭐⭐|저자 출제|
+|[41.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/41.cpp)|벨만-포드 알고리즘 구현하기|⭐⭐⭐|저자 출제|
+|[42.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/42.cpp)|게임 맵 최단 거리|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/1844|
+|[43.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/43.cpp)|네트워크|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/43162|
+|[44.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/44.cpp)|배달|⭐⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12978|
+|[45.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/45.cpp)|경주로 건설|⭐⭐⭐⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/67259|
+|[46.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/46.cpp)|전력망을 둘로 나누기|⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/86971|
+
+
+
+## 12장 백트래킹
+| 파일명 | 문제 |난이도| 비고 |
+|------|------|------|------|
+|[47.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/47.cpp)|1부터 N까지 숫자 중 합이 10이 되는 조합 구하기|⭐⭐|저자 출제|
+|[48.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/48.cpp)|스도쿠 퍼즐|⭐⭐|저자 출제|
+|[49.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/49.cpp)|피로도|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/87946|
+|[50.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/50.cpp)|N-퀸|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12952|
+|[51.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/51.cpp)|양궁 대회|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/92342|
