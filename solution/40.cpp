@@ -8,7 +8,7 @@ const int MAX_NODES = 100;
 int graph[MAX_NODES][MAX_NODES];
 bool visited[MAX_NODES];
 
-vector<int> solution(int start, int numNodes, const vector<tuple<int, int, int>>& edges) {
+vector<int> solution(int start, int numNodes, const vector<tuple<int, int, int>> edges) {
   //❶ 그래프 및 방문 여부 초기화
   for (int i = 0; i < MAX_NODES; ++i) {
     fill_n(graph[i], MAX_NODES, INF);
