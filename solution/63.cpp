@@ -18,7 +18,7 @@ vector<vector<int>> multiply(vector<vector<int>> matrix1, vector<vector<int>> ma
   return result;
 }
 
-vector<vector<int>> transpose(const vector<vector<int>>& matrix) {
+vector<vector<int>> transpose(vector<vector<int>> matrix) {
   //❸ 결과 행렬을 0으로 초기화합니다.
   vector<vector<int>> result(3, vector<int>(3, 0));
 
