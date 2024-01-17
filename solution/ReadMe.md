@@ -91,3 +91,40 @@
 |[49.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/49.cpp)|피로도|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/87946|
 |[50.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/50.cpp)|N-퀸|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12952|
 |[51.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/51.cpp)|양궁 대회|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/92342|
+|[52.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/52.cpp)|외벽 점검|⭐⭐⭐⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/60062|
+|[53.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/53.cpp)|사라지는 발판|⭐⭐⭐⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/92345|
+
+
+## 13장 정렬
+| 파일명 | 문제 |난이도| 비고 |
+|------|------|------|------|
+|[54.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/54.cpp)|계수 정렬 구현하기|⭐|저자 출제|
+|[55.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/55.cpp)|정렬이 완료된 두 배열 합치기|⭐|저자 출제|
+|[56.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/56.cpp)|문자열 내 마음대로 정렬하기|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12915|
+|[57.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/57.cpp)|정수 내림차순으로 배치하기|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12933|
+|[58.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/58.cpp)|K번째 수|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/42748|
+|[59.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/59.cpp)|가장 큰 수|⭐⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/42746|
+|[60.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/60.cpp)|튜플|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/64065|
+|[61.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/61.cpp)|지형 이동|⭐⭐⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/62050|
+
+
+
+
+## 14장 시뮬레이션
+| 파일명 | 문제 |난이도| 비고 |
+|------|------|------|------|
+|[62.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/62.cpp)|배열 회전하기|⭐⭐|저자 출제|
+|[63.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/63.cpp)|두 행렬을 곱한 후 전치 행렬 만들기|⭐|저자 출제|
+|[64.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/64.cpp)|달팽이 수열 만들기|⭐⭐|저자 출제|
+|[65.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/65.cpp)|이진 변환 하기|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/70129|
+|[66.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/66.cpp)|롤케이크 자르기|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/132265|
+|[67.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/67.cpp)|카펫|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/42842|
+|[68.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/68.cpp)|점프와 순간 이동|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12980|
+|[69.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/69.cpp)|캐릭터의 좌표|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/120861|
+
+
+
+## 15장 동적 계획법
+| 파일명 | 문제 |난이도| 비고 |
+|------|------|------|------|
+|[70.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/70.cpp)|LCS 길이 계산하기|⭐⭐⭐|저자 출제|
