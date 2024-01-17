@@ -42,6 +42,8 @@ int solution(int n, vector<int> weak, vector<int> dist) {
 //아래 코드는 테스트 코드 입니다.
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
    cout << solution(12, {1, 5, 6, 10},{1, 2, 3, 4}) << endl; //출력값 : 2
