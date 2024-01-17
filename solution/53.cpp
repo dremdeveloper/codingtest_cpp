@@ -48,6 +48,8 @@ int solution(vector<vector<int>> board, vector<int> aloc, vector<int> bloc) {
 #include <iterator>
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
   cout <<solution( {{1, 1, 1}, {1, 1, 1}, {1, 1, 1}}, {1, 0}, {1, 2}) << endl;//출력값 : 5
