@@ -47,7 +47,7 @@ void print(vector<int> vec)
 int main()
 {
   print(solution({1, 3, 5}, {2, 4, 6})); // 출력값 : 1 2 3 4 5 6
-  print(solution({1, 3, 5}, {4, 5, 6})); // 출력값 : 1 2 3 4 5 6
+  print(solution({1, 2, 3}, {4, 5, 6})); // 출력값 : 1 2 3 4 5 6
   
   return 0;
 }
