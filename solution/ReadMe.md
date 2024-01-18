@@ -128,3 +128,24 @@
 | 파일명 | 문제 |난이도| 비고 |
 |------|------|------|------|
 |[70.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/70.cpp)|LCS 길이 계산하기|⭐⭐⭐|저자 출제|
+|[71.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/71.cpp)|LIS 길이 계산하기|⭐⭐⭐|저자 출제|
+|[72.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/72.cpp)|조약돌 문제|⭐⭐⭐|저자 출제|
+|[73.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/73.cpp)|피보나치 수|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12945|
+|[74.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/74.cpp)|2 x n 타일링|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12900|
+|[75.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/75.cpp)|정수 삼각형|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/43105|
+|[76.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/76.cpp)|땅따먹기|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12913|
+|[77.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/77.cpp)|도둑질|⭐⭐⭐⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/42897|
+|[78.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/78.cpp)|가장 큰 정사각형 찾기|⭐⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12905|
+|[79.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/79.cpp)|단어 퍼즐|⭐⭐⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12983|
+
+
+
+## 16장 그리디
+| 파일명 | 문제 |난이도| 비고 |
+|------|------|------|------|
+|[80.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/80.cpp)|거스름돈 거슬러 주기|⭐⭐|저자 출제|
+|[81.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/81.cpp)|부분 배낭 문제|⭐|저자 출제|
+|[82.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/82.cpp)|예산|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12982|
+|[83.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/83.cpp)|구명보트|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/42885|
+|[84.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/84.cpp)|귤 고르기|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/138476|
+|[85.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/85.cpp)|기지국 설치|⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/12979|
