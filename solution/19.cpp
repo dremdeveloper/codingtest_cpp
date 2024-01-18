@@ -34,7 +34,7 @@ vector<bool> solution(vector<string> string_list, vector<string> query_list) {
         bool found = (hash_set.find(query_hash) != hash_set.end());
         result.push_back(found);
     }
-    //❹  quer_list들이 hash에 있는지에 대한 값이 있는지에 대한 결과가 저장된 result를 반환
+    // ❹ query_list의 문자열이 hash에 있는지 결과가 저장된 result를 반환
     return result;
 }
 
