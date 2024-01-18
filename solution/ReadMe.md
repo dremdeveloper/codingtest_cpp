@@ -130,7 +130,7 @@
 |[70.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/70.cpp)|LCS 길이 계산하기|⭐⭐⭐|저자 출제|
 |[71.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/71.cpp)|LIS 길이 계산하기|⭐⭐⭐|저자 출제|
 |[72.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/72.cpp)|조약돌 문제|⭐⭐⭐|저자 출제|
-|[73.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/73.cpp)|피보나치 수|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12945|
+|[73.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/73.cpp)<br>[73-2.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/73-2.cpp)|피보나치 수|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12945|
 |[74.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/74.cpp)|2 x n 타일링|⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12900|
 |[75.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/75.cpp)|정수 삼각형|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/43105|
 |[76.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/76.cpp)|땅따먹기|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/12913|
