@@ -19,7 +19,7 @@ using namespace std;
 int main()
 {
   cout << solution(3) << endl; //출력값 : 2
-  cout << solution(2) << endl; //출력값 : 5
+  cout << solution(5) << endl; //출력값 : 5
   
   return 0;
 }
