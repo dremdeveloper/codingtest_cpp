@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int dfs(int node, int parent, const vector<vector<int>> graph) {
+int dfs(int node, int parent, const vector<vector<int>>& graph) {
   int cnt = 1;
   //❶ 인접노드에 대해 깊이우선탐색 계속 진행
   for (int child : graph[node]) {
