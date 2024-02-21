@@ -30,6 +30,6 @@ int solution(int N, vector<int> stations, int W) {
 int main()
 {
     cout << solution(11, {4, 11}, 1) << endl; // 3
-    cout << solution(16, {9}, 1) << endl;   // 3
+    cout << solution(16, {9}, 1) << endl;   // 5
     return 0;
 }
