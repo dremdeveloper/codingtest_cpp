@@ -1,3 +1,9 @@
+//############################################################
+// | cafe       | http://cafe.naver.com/dremdelover          |
+// | Q&A        | https://open.kakao.com/o/gX0WnTCf          |
+// | business   | ultrasuperrok@gmail.com                    |
+//############################################################
+
 /*
 머지 정렬(Merge Sort)은 분할 정복 알고리즘의 한 예입니다.
 - 시간 복잡도: O(n log n)
