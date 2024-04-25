@@ -1,3 +1,9 @@
+//############################################################
+// | cafe       | http://cafe.naver.com/dremdelover          |
+// | Q&A        | https://open.kakao.com/o/gX0WnTCf          |
+// | business   | ultrasuperrok@gmail.com                    |
+//############################################################
+
 /*
 삽입 정렬 알고리즘:
 - 시간 복잡도: 최악의 경우 O(n^2), 최선의 경우 O(n)
