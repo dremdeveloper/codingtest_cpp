@@ -3,16 +3,16 @@
 
 using namespace std;
 
-vector<int> solution(int blue, int white) {
+vector<int> solution(int green, int white) {
   // ❶ 격자의 총 개수 (파란색 격자 + 흰색 격자)
-  int total_size = blue + white;
+  int total_size = green + white;
   // ❷ 세로 길이의 범위는 3부터 (파란색 격자 + 흰색 격자)의 제곱근
   for (int vertical = 3; vertical <= sqrt(total_size); ++vertical) {
     // ❸ 사각형 구성이 되는지 확인
     if (total_size % vertical == 0) {
       int horizontal = total_size / vertical; // ❹ 사각형의 가로 길이
       // ❺ 카펫 형태로 만들 수 있는지 확인
-      if (blue == (horizontal + vertical - 2) * 2) {
+      if (green == (horizontal + vertical - 2) * 2) {
         return {horizontal, vertical}; // ❻ {가로 길이, 세로 길이}
       }
     }

@@ -63,16 +63,16 @@ int bfs(char start, char end, vector<string>& maze) {
   return -1;
 }
 
-int solution(vector<string> maze) {
-  n = maze.size();
-  m = maze[0].size();
+int solution(vector<string> maps) {
+  n = maps.size();
+  m = maps[0].size();
 
   //❻ 시작지점부터 L까지 최단거리를 구함 
-  int distanceToL = bfs('S', 'L', maze);
+  int distanceToL = bfs('S', 'L', maps);
   if (distanceToL == -1) return -1;
 
   //❼ L부터 도착지점까지 최단거리를 구함
-  int distanceToE = bfs('L', 'E', maze);
+  int distanceToE = bfs('L', 'E', maps);
   return distanceToE == -1 ? -1 : distanceToL + distanceToE;
 }
 
