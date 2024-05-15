@@ -6,63 +6,64 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 int main() {
-    // C++의 vector는 동적 배열을 구현한 컨테이너입니다.
-    // 연속된 메모리 위치에 데이터를 저장하기 때문에 랜덤 액세스가 가능하며, O(1)의 시간복잡도를 갖습니다.
-    // 배열과 비슷하지만, 크기가 동적으로 변경될 수 있습니다.
-    // 주로 알려진 크기가 없고, 자주 수정되지 않는 데이터를 저장할 때 사용됩니다.
+    // 벡터 초기화 방법 1: 기본 생성자
+    vector<int> vec1;  // 빈 벡터 선언: vec1 = {}
 
-    // vector의 선언
-    std::vector<int> vec;
+    // 벡터 초기화 방법 2: 크기 지정, 모든 원소 0으로 초기화
+    vector<int> vec2(5);  // vec2 = {0, 0, 0, 0, 0}
 
-    // push_back: O(1) 평균, O(n) 최악의 경우 (재할당이 필요할 때)
-    // 맨 뒤에 요소 추가
-    vec.push_back(1);
-    vec.push_back(2);
-    vec.push_back(3);
+    // 벡터 초기화 방법 3: 크기와 초기값 지정
+    vector<int> vec3(5, 1);  // vec3 = {1, 1, 1, 1, 1}
 
-    // [] operator: O(1)
-    // 랜덤 액세스
-    std::cout << vec[1] << std::endl;  // 출력: 2
+    // 벡터 초기화 방법 4: 초기화 리스트 사용
+    vector<int> vec4 = {1, 2, 3, 4, 5};  // vec4 = {1, 2, 3, 4, 5}
 
-    // at: O(1)
-    // 랜덤 액세스, 범위를 검사
-    std::cout << vec.at(2) << std::endl;  // 출력: 3
+    // 벡터 초기화 방법 5: 다른 벡터로부터 초기화
+    vector<int> vec5(vec4);  // vec5 = {1, 2, 3, 4, 5}
 
-    // front: O(1)
-    // 첫 번째 요소 액세스
-    std::cout << vec.front() << std::endl;  // 출력: 1
+    // 벡터 초기화 방법 6: 다른 벡터의 부분 범위로부터 초기화
+    vector<int> vec6(vec4.begin() + 1, vec4.end() - 1);  // vec6 = {2, 3, 4}
 
-    // back: O(1)
-    // 마지막 요소 액세스
-    std::cout << vec.back() << std::endl;   // 출력: 3
+    // 벡터 메서드 예시
+    vector<int> vec;
 
-    // size: O(1)
-    // 벡터의 크기 반환
-    std::cout << vec.size() << std::endl;   // 출력: 3
+    // push_back: 벡터의 끝에 원소를 추가합니다.
+    // vec.push_back(값)
+    // 벡터의 맨 끝에 '값'을 추가합니다.
+    // 시간복잡도: 평균 O(1)
+    vec.push_back(10);  // vec = {10}
+    vec.push_back(20);  // vec = {10, 20}
+    vec.push_back(30);  // vec = {10, 20, 30}
 
-    // pop_back: O(1)
-    // 마지막 요소 제거
-    vec.pop_back();
+    // pop_back: 벡터의 마지막 원소를 제거합니다.
+    // vec.pop_back()
+    // 벡터의 맨 끝에 있는 원소를 제거합니다.
+    // 시간복잡도: O(1)
+    vec.pop_back();  // vec = {10, 20}
 
-    // resize: O(n)
-    // 벡터 크기 조절. 필요한 경우 값을 채워 넣거나 기존 값 삭제
-    vec.resize(5, 100);  // {1, 2, 100, 100, 100}
+    // insert: 지정한 위치에 원소를 삽입합니다.
+    // vec.insert(위치, 값)
+    // '위치'에 '값'을 삽입합니다. '위치'는 반복자로 지정합니다.
+    // vec.begin()은 첫 번째 원소를 가리킵니다.
+    // vec.begin() + 1은 두 번째 원소를 가리킵니다.
+    // 시간복잡도: O(n)
+    vec.insert(vec.begin() + 1, 15);  // vec = {10, 15, 20}
 
-    // clear: O(n)
-    // 모든 요소 제거
-    vec.clear();
+    // erase: 지정한 위치의 원소를 제거합니다.
+    // vec.erase(위치)
+    // '위치'의 원소를 제거합니다. '위치'는 반복자로 지정합니다.
+    // vec.begin()은 첫 번째 원소를 가리킵니다.
+    // 시간복잡도: O(n)
+    vec.erase(vec.begin());  // vec = {15, 20}
 
-    // 성능 이슈:
-    // 1. 벡터의 중간에 요소를 삽입하거나 제거할 경우, O(n)의 시간복잡도를 갖게 되며 성능 저하가 발생할 수 있습니다.
-    // 예:
-    // vec.insert(vec.begin() + 1, 100);  // 두 번째 위치에 100 삽입
-    // vec.erase(vec.begin());            // 첫 번째 요소 제거
-
-    // 2. 벡터가 자주 재할당되면 (즉, push_back을 자주 호출하여 벡터의 용량을 초과하면) 성능 저하가 발생할 수 있습니다.
-    // 이를 피하기 위해 reserve 메서드를 사용하여 미리 메모리를 할당해두는 것이 좋습니다.
-    // 예:
-    // vec.reserve(1000);
+    // size: 벡터의 크기를 반환합니다.
+    // vec.size()
+    // 현재 벡터에 저장된 원소의 개수를 반환합니다.
+    // 시간복잡도: O(1)
+    cout << "Size of vector: " << vec.size() << endl;  // 출력: Size of vector: 2
 
     return 0;
 }
