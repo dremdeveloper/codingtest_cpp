@@ -65,6 +65,44 @@ int main() {
     // 시간복잡도: O(1)
     cout << "Size of vector: " << vec.size() << endl;  // 출력: Size of vector: 2
 
+    // vector를 사용해야 하는 경우
+    // 1. 동적 배열이 필요한 경우
+    // 예: 프로그램 실행 중에 배열의 크기를 변경해야 하는 경우
+    vector<int> dynamicArray;
+    for (int i = 0; i < 10; ++i) {
+        dynamicArray.push_back(i * 2);  // {0, 2, 4, 6, 8, 10, 12, 14, 16, 18}
+    }
+    cout << "Dynamic array: ";
+    for (int v : dynamicArray) {
+        cout << v << " ";
+    }
+    cout << endl;
+
+    // 2. 임의 접근이 필요한 경우
+    // 예: 특정 인덱스에 빠르게 접근해야 하는 경우
+    cout << "Third element: " << dynamicArray[2] << endl;  // 출력: Third element: 4
+
+    // 3. 데이터의 크기가 자주 바뀌는 경우
+    // 예: 데이터의 추가와 삭제가 빈번하게 발생하는 경우
+    vector<int> flexibleArray;
+    flexibleArray.push_back(1); // {1}
+    flexibleArray.push_back(2); // {1, 2}
+    flexibleArray.pop_back();   // {1}
+
+    // vector를 사용하지 말아야 하는 경우
+    // 1. 값을 자주 찾아야 할 때
+    // 예: 원소의 존재 여부를 자주 검사해야 하는 경우에는 비효율적
+    // 대안: std::set 또는 std::unordered_set 사용
+    vector<int> searchVector = {1, 2, 3, 4, 5};
+    if (find(searchVector.begin(), searchVector.end(), 3) != searchVector.end()) {
+        cout << "3 is in the vector" << endl;
+    }
+
+    // 2. 맨 앞에 원소를 추가해야 할 때
+    // 예: 벡터의 맨 앞에 원소를 자주 삽입해야 하는 경우에는 비효율적
+    // 대안: std::deque 또는 std::list 사용
+    vector<int> inefficientFrontInsert = {1, 2, 3, 4, 5};
+    inefficientFrontInsert.insert(inefficientFrontInsert.begin(), 0); // {0, 1, 2, 3, 4, 5}
+
     return 0;
 }
-
