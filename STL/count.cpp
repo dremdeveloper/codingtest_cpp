@@ -5,33 +5,32 @@
 //############################################################
 #include <iostream>
 #include <vector>
-#include <algorithm>
-
+#include <algorithm> // for std::count
 using namespace std;
 
-// std::count는 C++ STL의 algorithm 헤더에 포함된 요소 계산 함수입니다.
-// - 주어진 범위 내에서 특정 값을 가진 요소의 개수를 반환합니다.
-// 좋은 사용 시기:
-// - 배열이나 컨테이너에서 특정 값의 개수를 알고 싶을 때.
-// 성능 이슈:
-// - count는 선형 시간 복잡도를 갖는 알고리즘입니다. 대규모 데이터에서는 성능 저하가 발생할 수 있습니다.
-
-// 조건 함수: 짝수를 확인하는 함수
-bool isEven(int i) {
-    return i % 2 == 0;
-}
-
 int main() {
+    // 예시 벡터 생성
+    vector<int> v = {1, 2, 3, 4, 5, 1, 2, 1};
 
-    vector<int> v = {3, 1, 4, 1, 5, 9, 2, 6, 3, 3};
+    // count 함수 사용 예시
+    // std::count 함수는 주어진 범위에서 특정 값이 몇 번 나타나는지 센다.
+    // 여기서 v.begin()과 v.end()는 벡터의 시작과 끝을 나타내며,
+    // 1은 찾고자 하는 값이다.
+    int count_of_1 = count(v.begin(), v.end(), 1);
 
-    // 기본 동작: 범위 내에서 값 3의 개수 계산, O(n)
-    int cnt = count(v.begin(), v.end(), 3);
-    cout << "Number of 3s: " << cnt << endl;  // 출력: Number of 3s: 3
+    // 결과 출력
+    cout << "벡터에서 1의 개수: " << count_of_1 << endl;
 
-    // count_if: 조건에 맞는 요소의 개수 계산, O(n)
-    int evenCount = count_if(v.begin(), v.end(), isEven);
-    cout << "Number of even numbers: " << evenCount << endl;  // 출력: Number of even numbers: 3
+    // 출력값:
+    // 벡터에서 1의 개수: 3
+
+    // 시간 복잡도:
+    // std::count 함수의 시간 복잡도는 O(N)이다.
+    // 여기서 N은 주어진 범위의 요소 수를 나타낸다.
+
+    // count 함수를 사용해야 하는 경우
+    // 데이터 집합에서 특정 값의 출현 빈도를 알고 싶을 때 유용하다.
+    // 예를 들어, 설문조사 결과에서 특정 답변이 몇 번 나왔는지 확인할 때 사용할 수 있다.
 
     return 0;
 }
