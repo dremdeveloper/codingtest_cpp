@@ -5,37 +5,43 @@
 //############################################################
 #include <iostream>
 #include <vector>
-#include <algorithm>
-
+#include <algorithm> // for std::min_element
 using namespace std;
 
-// std::min_element는 C++ STL의 algorithm 헤더에 포함된 최소 요소 검색 함수입니다.
-// - 주어진 범위 내에서 최소 값을 가진 요소의 반복자를 반환합니다.
-// 좋은 사용 시기:
-// - 배열이나 컨테이너에서 최소 값을 가진 요소를 찾고 싶을 때.
-// 성능 이슈:
-// - min_element는 선형 시간 복잡도를 갖는 알고리즘입니다. 대규모 데이터에서는 성능 저하가 발생할 수 있습니다.
-
 int main() {
+    // 예시 벡터 생성
+    vector<int> v = {1, 3, 4, 5, 7, 9, 10};
 
-    vector<int> v = {1, 3, 7, 2, 5, 9, 4};
+    // 최소값 찾기
+    auto min_it = min_element(v.begin(), v.end());
 
-    // 기본 동작: 범위 내 최소 값을 가진 요소 찾기, O(n)
-    auto it = min_element(v.begin(), v.end());
-    if(it != v.end()) {
-        cout << "Min element: " << *it << endl;  // 출력: Min element: 1
-    }
+    // 결과 출력
+    cout << "최소값: " << *min_it << " (위치: " << distance(v.begin(), min_it) << ")" << endl;
 
-    // 사용자 정의 비교 함수를 사용하여 최대 요소 찾기
-    auto maxIt = min_element(v.begin(), v.end(), [](int a, int b) {
-        return a > b;  // 반대로 비교
-    });
-    if(maxIt != v.end()) {
-        cout << "Max element using custom comparator: " << *maxIt << endl;  // 출력: Max element using custom comparator: 9
-    }
-
-    // 성능 저하 예제:
-    // min_element는 모든 요소를 확인하기 때문에 대규모 데이터에서는 시간이 오래 걸릴 수 있습니다.
-    // 필요한 경우, 데이터의 구조를 최적화하거나 다른 알고리즘/자료구조를 사용하여 성능을 향상시킬 수 있습니다.
+    return 0;
 }
+
+/*
+출력값:
+
+최소값: 1 (위치: 0)
+*/
+
+// min_element에 대한 설명
+/*
+std::min_element 함수는 주어진 범위에서 가장 작은 요소를 찾는 데 사용됩니다.
+이 함수는 선형 탐색 알고리즘을 사용하여 값을 찾습니다.
+
+설명:
+1. 반환값: 가장 작은 값을 가리키는 반복자를 반환합니다.
+   반환된 반복자를 사용하여 해당 값에 접근할 수 있습니다.
+2. 범위: 시작 반복자와 끝 반복자를 인자로 받아, 이 범위 내에서 탐색을 수행합니다.
+
+시간복잡도:
+- std::min_element 함수의 시간복잡도는 O(N)입니다. 여기서 N은 범위 내의 요소 수입니다.
+
+예제:
+벡터가 {1, 3, 4, 5, 7, 9, 10}로 주어졌을 때,
+min_element(v.begin(), v.end())를 호출하면 반복자가 1을 가리킵니다.
+*/
 
