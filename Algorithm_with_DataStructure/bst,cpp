@@ -30,7 +30,6 @@ using namespace std;
 BST는 정렬된 데이터를 빠르게 탐색할 수 있는 장점이 있습니다. 또한, 새로운 데이터를 삽입하거나 기존 데이터를 삭제하는 데에도 비교적 효율적입니다. 반면에, 배열은 특정 인덱스에 빠르게 접근할 수 있는 장점이 있지만, 삽입이나 삭제 시에는 많은 원소를 이동시켜야 하므로 비효율적일 수 있습니다.
 */
 
-
 // 이진 트리 노드 정의
 struct Node {
     int data; // 노드에 저장된 데이터
@@ -55,6 +54,19 @@ Node* insert(Node* root, int data) {
     return root;
 }
 
+// 이진 탐색 트리에서 특정 값을 찾는 함수
+Node* search(Node* root, int data) {
+    if (root == nullptr || root->data == data) {
+        return root; // 노드가 없거나 데이터를 찾은 경우 반환
+    }
+
+    if (data < root->data) {
+        return search(root->left, data); // 데이터가 작으면 왼쪽 서브트리에서 검색
+    } else {
+        return search(root->right, data); // 데이터가 크면 오른쪽 서브트리에서 검색
+    }
+}
+
 // 이진 탐색 트리를 중위 순회로 출력하는 함수
 void inorder(Node* root) {
     if (root != nullptr) {
@@ -67,50 +79,34 @@ void inorder(Node* root) {
 int main() {
     Node* root = nullptr; // 초기 트리는 비어 있음
 
-    // 첫 번째 삽입: 3
+    // 노드 삽입
     root = insert(root, 3); 
-    // 트리 구조:
-    //   3
-    
-    // 두 번째 삽입: 4
     root = insert(root, 4);
-    // 트리 구조:
-    //   3
-    //    \
-    //     4
-
-    // 세 번째 삽입: 2
     root = insert(root, 2);
-    // 트리 구조:
-    //     3
-    //    / \
-    //   2   4
-
-    // 네 번째 삽입: 8
     root = insert(root, 8);
-    // 트리 구조:
-    //     3
-    //    / \
-    //   2   4
-    //        \
-    //         8
-
-    // 다섯 번째 삽입: 9
     root = insert(root, 9);
-    // 트리 구조:
-    //     3
-    //    / \
-    //   2   4
-    //        \
-    //         8
-    //          \
-    //           9
-
 
     cout << "이진 탐색 트리의 중위 순회 출력: ";
     inorder(root); // 중위 순회 호출
     cout << endl;
     // 출력: 2 3 4 8 9
+
+    // 특정 값 검색
+    int valueToSearch = 4;
+    Node* result = search(root, valueToSearch);
+    if (result != nullptr) {
+        cout << valueToSearch << "를 찾았습니다: " << result->data << endl;
+    } else {
+        cout << valueToSearch << "를 찾을 수 없습니다." << endl;
+    }
+
+    valueToSearch = 5;
+    result = search(root, valueToSearch);
+    if (result != nullptr) {
+        cout << valueToSearch << "를 찾았습니다: " << result->data << endl;
+    } else {
+        cout << valueToSearch << "를 찾을 수 없습니다." << endl;
+    }
 
     return 0;
 }
