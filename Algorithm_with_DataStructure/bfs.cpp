@@ -14,9 +14,9 @@ vector<vector<int>> adj;
 vector<bool> visited;
 
 // 그래프에 간선을 추가하는 함수
-// 인자: v (정점), w (연결된 정점)
-void add_edge(int v, int w) {
-    adj[v].push_back(w); // 정점 v의 인접 리스트에 정점 w를 추가
+// 인자: u (정점), v (연결된 정점)
+void add_edge(int u, int v) {
+    adj[u].push_back(v); // 정점 u의 인접 리스트에 정점 v를 추가
 }
 
 // 너비 우선 탐색(BFS)을 수행하는 함수
