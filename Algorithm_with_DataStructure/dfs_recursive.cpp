@@ -28,19 +28,6 @@ void dfs(int v) {
     }
 }
 
-// 전체 그래프를 DFS로 순회하는 함수
-// 인자: V (정점의 개수)
-void dfs_traversal(int V) {
-    // 모든 정점을 방문하지 않은 상태로 초기화
-    visited.assign(V, false);
-
-    // 모든 정점에 대해 DFS 수행
-    for (int v = 0; v < V; v++) {
-        if (!visited[v]) {
-            dfs(v);
-        }
-    }
-}
 
 // 메인 함수: 그래프 생성 및 DFS 수행
 int main() {
@@ -55,10 +42,11 @@ int main() {
     add_edge(1, 4); // B -> E
 
     cout << "깊이 우선 탐색 (정점 0에서 시작):\n";
-    dfs_traversal(V);
+    
+    visited.assign(V, false);
+    dfs(0);
   /*
    재귀 호출 과정 설명 (예: 정점 0에서 시작):
- dfs_traversal(5) 호출
     dfs(0) 호출 -> 0 출력
         dfs(1) 호출 -> 1 출력
             dfs(3) 호출 -> 3 출력
