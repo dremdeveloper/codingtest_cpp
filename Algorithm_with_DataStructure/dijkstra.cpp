@@ -18,6 +18,7 @@ const int INF = numeric_limits<int>::max();
 vector<vector<pair<int, int>>> graph; // 그래프를 인접 리스트 형태로 저장
 vector<int> dist;                    // 각 노드까지의 최단 거리를 저장
 vector<int> prev;                    // 각 노드의 직전 노드를 저장
+vector<bool> visited;
 
 // 다익스트라 알고리즘 함수
 void dijkstra(int start) {
@@ -46,6 +47,7 @@ void dijkstra(int start) {
         
         // 현재 노드까지의 거리가 이미 더 짧은 경로가 있으면 무시
         if (visited[u]) continue;
+        visitied[u] = true;
 
         // 현재 노드의 모든 인접 노드를 탐색
         for (const auto& edge : graph[u]) {
