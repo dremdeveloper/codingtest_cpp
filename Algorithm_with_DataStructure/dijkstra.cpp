@@ -45,7 +45,7 @@ void dijkstra(int start) {
         pq.pop();                // 큐에서 제거
         
         // 현재 노드까지의 거리가 이미 더 짧은 경로가 있으면 무시
-        if (d > dist[u]) continue;
+        if (visited[u]) continue;
 
         // 현재 노드의 모든 인접 노드를 탐색
         for (const auto& edge : graph[u]) {
