@@ -1,3 +1,9 @@
+//############################################################
+// | cafe       | http://cafe.naver.com/dremdelover          |
+// | Q&A        | https://open.kakao.com/o/gX0WnTCf          |
+// | business   | ultrasuperrok@gmail.com                    |
+//############################################################
+
 /*
 상태 정의 : 문제의 각 단계에서 가능한 상태를 정의
 유망 함수(isPromising) : 현재 상태가 유망한지 판단, 유망하지 않으면 더 이상 탐색 x
