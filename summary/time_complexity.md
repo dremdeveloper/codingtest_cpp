@@ -143,11 +143,11 @@ vector<int> removeDuplicates(const vector<int>& arr) {
 3. 집합을 다시 배열로 변환하여 반환합니다.
 
 ```pseudocode
-function removeDuplicates(arr):
-    set s = new set
-    for element in arr:
-        add element to set s
-    return list of elements in set s
+함수 removeDuplicates(arr):
+    s = 빈 set 생성
+    각 element in arr에 대해 반복:
+        set s에 element 추가
+    set s의 요소들을 리스트로 변환하여 반환
 ```
 ---
 
