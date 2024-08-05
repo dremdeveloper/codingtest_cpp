@@ -4,8 +4,11 @@
 
 using namespace std;
 
+const int ROW = 3;
+const int COL = 4;
+
 // 문제의 정의:
-// n x n 크기의 사각형에서 만들 수 있는 모든 정사각형의 개수를 구하는 문제입니다.
+// ROW x COL 크기의 사각형에서 만들 수 있는 모든 정사각형의 개수를 구하는 문제입니다.
 
 // 최적 부분 구조:
 // 현재 셀에서 만들 수 있는 정사각형의 크기는 
@@ -17,43 +20,31 @@ using namespace std;
 // 점화식:
 // dp[i][j] = min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) + 1
 
-int countSquares(vector<vector<int>>& matrix);
+int countSquares();
 
 int main() {
-    int n;
-    cout << "사각형의 크기를 입력하세요: ";
-    cin >> n;
-
-    // n x n 크기의 행렬 초기화 (1로 초기화하여 모든 셀이 정사각형이 될 수 있도록)
-    vector<vector<int>> matrix(n, vector<int>(n, 1));
-
-    int result = countSquares(matrix);
+    int result = countSquares();
     cout << "만들 수 있는 정사각형의 총 개수: " << result << endl;
-
     return 0;
 }
 
-// n x n 크기의 사각형에서 만들 수 있는 모든 정사각형의 개수를 계산하는 함수
-int countSquares(vector<vector<int>>& matrix) {
-    int n = matrix.size();
-    vector<vector<int>> dp(n, vector<int>(n, 0));
-    int totalSquares = 0;
-
-    // 초기값 설정
-    for (int i = 0; i < n; ++i) {
-        dp[i][0] = matrix[i][0];
-        dp[0][i] = matrix[0][i];
-        totalSquares += dp[i][0] + dp[0][i];
-    }
-    totalSquares -= dp[0][0]; // 중복된 [0][0] 값을 빼줍니다.
+// ROW x COL 크기의 사각형에서 만들 수 있는 모든 정사각형의 개수를 계산하는 함수
+int countSquares() {
+    vector<vector<int>> dp(ROW, vector<int>(COL, 1)); // 모든 값을 1로 초기화
 
     // 동적 계획법을 이용한 계산
-    for (int i = 1; i < n; ++i) {
-        for (int j = 1; j < n; ++j) {
-            if (matrix[i][j] == 1) {
-                dp[i][j] = min({dp[i-1][j], dp[i][j-1], dp[i-1][j-1]}) + 1;
-                totalSquares += dp[i][j];
-            }
+    for (int i = 1; i < ROW; ++i) {
+        for (int j = 1; j < COL; ++j) {
+            // dp[i][j]는 현재 셀에서 만들 수 있는 가장 큰 정사각형의 크기를 나타냄
+            dp[i][j] = min({dp[i-1][j], dp[i][j-1], dp[i-1][j-1]}) + 1;
+        }
+    }
+
+    int totalSquares = 0;
+    // 모든 dp 값 합산
+    for (int i = 0; i < ROW; ++i) {
+        for (int j = 0; j < COL; ++j) {
+            totalSquares += dp[i][j];
         }
     }
 
@@ -61,16 +52,13 @@ int countSquares(vector<vector<int>>& matrix) {
 }
 
 /*
-예제 입력:
-3
-
 예제 출력:
-14
+20
 
 예제 설명:
-3x3 행렬에서 만들 수 있는 정사각형의 개수는 다음과 같습니다:
-- 1x1 크기의 정사각형: 9개
-- 2x2 크기의 정사각형: 4개
-- 3x3 크기의 정사각형: 1개
-총 합계: 9 + 4 + 1 = 14개
+3x4 행렬에서 만들 수 있는 정사각형의 개수는 다음과 같습니다:
+- 1x1 크기의 정사각형: 12개
+- 2x2 크기의 정사각형: 6개
+- 3x3 크기의 정사각형: 2개
+총 합계: 12 + 6 + 2 = 20개
 */
