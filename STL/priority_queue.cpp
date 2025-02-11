@@ -34,7 +34,7 @@ int main() {
     // size: O(1)
     cout << pq.size() << endl;  // 출력: 2
 
-    // 순회 (힙의 순서대로, 정렬된 순서가 아님): O(n)
+    // 힙의 우선순위에 따라 순회 : O(n)
     while(!pq.empty()) {
         cout << pq.top() << " ";  // 출력: 3 1
         pq.pop();
