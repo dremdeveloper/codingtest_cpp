@@ -44,13 +44,12 @@
 |[23.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/23.cpp)|할인 행사|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/131127|
 |[24.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/24.cpp)|오픈 채팅방|⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/42888|
 |[25.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/25.cpp)|베스트 앨범|⭐⭐| https://programmers.co.kr/learn/courses/30/lessons/42579|
-
+|[26.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/26.cpp)|신고 결과 받기|⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/92334|
+|[27.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/27.cpp)|메뉴 리뉴얼|⭐⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/72411|
 
 ## 09장 트리
 | 파일명 | 문제 |난이도| 비고 |
 |------|------|------|------|
-|[26.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/26.cpp)|신고 결과 받기|⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/92334|
-|[27.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/27.cpp)|메뉴 리뉴얼|⭐⭐⭐|https://programmers.co.kr/learn/courses/30/lessons/72411|
 |[28.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/28.cpp)|트리 순회|⭐⭐|저자 출제|
 |[29.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/29.cpp)|이진 탐색 트리 구현|⭐⭐⭐|저자 출제|
 |[30.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/30.cpp)|예상 대진표|⭐|https://programmers.co.kr/learn/courses/30/lessons/12985|
@@ -64,13 +63,14 @@
 |[33.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/33.cpp)|간단한 유니온-파인드 알고리즘 구현하기|⭐⭐|저자 출제|
 |[34.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/34.cpp)|폰켓몬|⭐|https://programmers.co.kr/learn/courses/30/lessons/1845|
 |[35.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/35.cpp)|섬 연결하기|⭐⭐⭐| https://school.programmers.co.kr/learn/courses/30/lessons/42861|
-|[36.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/36.cpp)|깊이 우선 탐색으로 모든 노드를 순회하는 함수 작성하기|⭐|저자 출제|
-|[37.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/37.cpp)|너비 우선 탐색으로 이용하여 모든 노드를 순회하는 함수 작성하기|⭐|저자 출제|
+
 
 
 ## 11장 그래프
 | 파일명 | 문제 |난이도| 비고 |
 |------|------|------|------|
+|[36.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/36.cpp)|깊이 우선 탐색으로 모든 노드를 순회하는 함수 작성하기|⭐|저자 출제|
+|[37.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/37.cpp)|너비 우선 탐색으로 이용하여 모든 노드를 순회하는 함수 작성하기|⭐|저자 출제|
 |[38.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/38.cpp)|다익스트라 알고리즘 구현하기|⭐⭐⭐|저자 출제|
 |[39.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/39.cpp)|벨만-포드 알고리즘 구현하기|⭐⭐⭐|저자 출제|
 |[40.cpp](https://github.com/dremdeveloper/codingtest_cpp/blob/main/solution/40.cpp)|미로 탈출|⭐⭐|https://school.programmers.co.kr/learn/courses/30/lessons/159993|
